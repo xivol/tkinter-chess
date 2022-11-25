@@ -1,4 +1,4 @@
-Chess GAme With TKinter
+Chess Game With TKinter
 
 https://python-scripts.com/tkinter-introduction
 
