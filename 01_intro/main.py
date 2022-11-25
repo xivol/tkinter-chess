@@ -5,6 +5,9 @@ import printer
 window = tkinter.Tk()
 printer.print_all(window)
 
+window.title('Chess Game')
+window.resizable(False, False)
+
 canvas = tkinter.Canvas(window, bg='yellow', height=300, width=300)
 canvas.pack()
 

@@ -1,36 +1,6 @@
 import tkinter
 
 window = tkinter.Tk()
-events = """Activate
-Destroy
-Map
-ButtonPress
-Enter
-MapRequest
-ButtonRelease
-Expose
-Motion
-Circulate
-FocusIn
-MouseWheel
-FocusOut
-Property
-Colormap
-Gravity
-Reparent
-Configure
-KeyPress
-ResizeRequest
-ConfigureRequest
-KeyRelease
-Unmap
-Create
-Leave
-Visibility
-Deactivate"""
-for ev in events.split():
-    window.bind('<' + ev + '>', lambda ev: print(ev))
-
 canvas = tkinter.Canvas(window, bg='white', height=600, width=600)
 canvas.pack(fill=tkinter.BOTH)
 

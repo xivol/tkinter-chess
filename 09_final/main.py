@@ -85,7 +85,7 @@ label.configure(font=('Arial', 12),
                 fg='black')
 
 board = Board()
-if board.player_color == WHITE:
+if board.current_player_color() == WHITE:
     label.configure(text="Ход белых")
 else:
     label.configure(text="Ход черных")
@@ -153,7 +153,7 @@ def release(ev):
             clicked.move_to(canvas, x, y)
             clicked.put(canvas)
             clicked = None
-            if board.player_color == WHITE:
+            if board.current_player_color() == WHITE:
                 label.configure(text="Ход белых")
             else:
                 label.configure(text="Ход черных")
